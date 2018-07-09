@@ -26,5 +26,5 @@ notes on how to setup GCP
 
 # Connect to RStudio Server
 1. Get externap IP address `gcloud compute instances list`
-2. In web browser http://<external-ip>:8787
+2. In web browser your-external-ip:8787
 3. Sign in with the username and passwrod you created for your account
