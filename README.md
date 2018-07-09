@@ -15,7 +15,7 @@ notes on how to setup GCP
 
 # Connect to VM and Set Password and Install R and Rstudio Server
 1. SSH to VM using gcloud `gcloud compute ssh my-cloud-compute`
-2. set a pasword for default user `sudo passwd`
+2. set a pasword for default user `passwd`
 3. install R using the instructions available at <https://cran.r-project.org/>
 - create a backup a configuration file like before you edit it `sudo cp /etc/apt/sources.list /etc/apt/sources.list.backup`
 - The Ubuntu archives on CRAN are signed with the key of “Michael Rutter marutter@gmail.com” with key ID E084DAB9. To add the key to your system with one command use `sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9`
