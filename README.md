@@ -8,8 +8,8 @@ notes on how to setup GCP
 4. View current configuration settings `gcloud config list`
 
 # Create VM
-1. create new VM n1-highmen-8 machine with ubuntu-1804-lts os `gcloud compute instances create my-cloud-comp --image-family ubuntu-1804-lts --image-project ubuntu-os-cloud --machine-type n1-highmem-8` 
-2. `firewall-rules create "rstudio-tcp-rule" --allow tcp:8787 --source-ranges="[home-ip-address]" --description="Allow port 8787 access from mome IP address`
+1. create new VM n1-standard-8 machine with ubuntu-1804-lts os `gcloud compute instances create my-cloud-comp --image-family ubuntu-1804-lts --image-project ubuntu-os-cloud --machine-type n1-standard-8 --boot-disk-size 250GB` 
+2. `gcloud compute firewall-rules create "rstudio-tcp-rule" --allow tcp:8787 --source-ranges="[home-ip-address]" --description="Allow port 8787 access from mome IP address`
 
 # Connect to VM and Set Password and Install R and Rstudio Server
 1. SSH to VM using gcloud `gcloud compute ssh my-cloud-compute`
