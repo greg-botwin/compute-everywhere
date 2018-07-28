@@ -33,3 +33,4 @@ notes on how to setup GCP
 2. In web browser your-external-ip:8787
 3. Sign in with the username and passwrod you created for your account
 
+A line i wrote on my local computer
