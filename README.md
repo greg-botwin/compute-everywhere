@@ -34,3 +34,6 @@ notes on how to setup GCP
 3. Sign in with the username and passwrod you created for your account
 
 A line i wrote on my local computer
+
+# Install Python (anaconda distribution)
+1. https://conda.io/docs/user-guide/install/index.html 
