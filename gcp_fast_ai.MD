@@ -10,12 +10,12 @@
 1. machine-type: n1-standard-4 (comes with 15GB ram)
 2. image-family ubuntu-1604-lts 
 3. image-project ubuntu-os-cloud
-4. boot-disk-size 50GB
+4. boot-disk-size 100GB
 5. accelerator 1,nvidia-tesla-k80  
 6. maintenance-policy TERMINATE "When you create an instance with one or more GPUs, you must set the instance to terminate on host maintenance. Instances with GPUs cannot live migrate because they are assigned to specific hardware devices."
-7 command `gcloud compute instances create my-fast-ai-comp --machine-type n1-standard-4 --image-family ubuntu-1604-lts --image-project ubuntu-os-cloud --boot-disk-size 50GB --accelerator count=1,type=nvidia-tesla-k80 --maintenance-policy TERMINATE`
+7 command `gcloud compute instances create my-fast-ai-comp --machine-type n1-standard-4 --image-family ubuntu-1604-lts --image-project ubuntu-os-cloud --boot-disk-size 100GB --accelerator count=1,type=nvidia-tesla-k80 --maintenance-policy TERMINATE`
 
 ## Set-up VM
 1. followed this script http://files.fast.ai/setup/paperspace with some modification http://forums.fast.ai/t/lesson-1-using-google-cloud-vm-step-by-step-installation-with-shell-script/7180/3 
-2. want to hink about making snapshot and image copy and better understanding all the details
+2. want to think about making snapshot and image copy and better understanding all the details
 
