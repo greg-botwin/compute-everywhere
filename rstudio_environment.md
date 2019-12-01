@@ -14,16 +14,19 @@ This workflow are persona notes and excerpts from the vignette posted at https:/
 
 ```
  gcloud compute instances create-with-container meta-ibd-cont \
-     --container-image rocker/rstudio:3.6.1 \
+     --container-image rocker/tidyverse:3.6.1 \
      --machine-type n1-standard-8 \
+     --boot-disk-size=250GB \
+     --boot-disk-type=pd-ssd
 ```
 
+Then SSH into new VM
+
+Then run rstudio
 ```
- gcloud compute instances create meta-ibd \
-     --machine-type n1-standard-8 
+docker run --rm -p 8787:8787 -e PASSWORD=yourpasswordhere rocker/tidyverse:3.6.1
 ```
 
-     --create-disk image-project=ubuntu-os-cloud,image-family=ubuntu-1804-lts,size=250GB,type=pd-ssd
 Note using TAG 3.6.1 to bind to specific version of R
 
 
